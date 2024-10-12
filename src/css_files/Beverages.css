@@ -1,0 +1,49 @@
+.home-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+    flex-wrap: wrap; /* Allow the cards to wrap in rows */
+    padding: 20px;
+    background-color: #111; /* Dark background like the one in the image */
+    height: 100vh; /* Make sure it takes up the full viewport height */
+}
+
+.beverage-card {
+    text-align: center;
+    margin: 20px; /* Increased margin for spacing */
+    color: white; /* White text for better contrast */
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.beverage-card:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.beverage-image {
+    width: 300px; /* Increased size of the cans */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    transition: filter 0.3s ease; /* Add hover effect */
+}
+
+.beverage-card:hover .beverage-image {
+    filter: brightness(1.2); /* Slight brightness change on hover */
+}
+
+.beverage-name {
+    font-size: 20px; /* Increased font size for better visibility */
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 10px 0; /* Space around the name */
+}
+
+.beverage-description {
+    font-size: 16px; /* Increased font size for better readability */
+    color: #999; /* Lighter color for description */
+    max-width: 250px; /* Ensure the description doesn’t stretch too wide */
+    margin: 0 auto; /* Center the text */
+}
+
+/* Optional: Add a little shadow to the text for more contrast */
+.beverage-name, .beverage-description {
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
